@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Toolscape — Discover the Best AI Tools in 2026</title>
+    <meta name="description"
+        content="Browse a curated directory of 60+ top AI tools across chatbots, image, video, audio, code, design, and more. Find the perfect AI tool for your workflow." />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+    <!-- Aurora Canvas Background -->
+    <canvas id="aurora-canvas"></canvas>
+    <div class="grid-overlay"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-logo">
+            <div class="logo-icon">⚡</div>
+            <span class="logo-text">AI Toolscape</span>
+        </a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#tools">All Tools</a></li>
+            <li><a href="#" class="nav-cta">Submit Tool</a></li>
+        </ul>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="floating-icons" aria-hidden="true">
+            <span class="floating-icon">🤖</span>
+            <span class="floating-icon">🎨</span>
+            <span class="floating-icon">💻</span>
+            <span class="floating-icon">🎬</span>
+            <span class="floating-icon">✨</span>
+            <span class="floating-icon">🧠</span>
+        </div>
+
+        <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Curated directory — 60+ AI tools</span>
+        </div>
+
+        <h1>
+            Find the Perfect<br />
+            <span class="gradient-text">AI Tool</span> for Any Task
+        </h1>
+
+        <p class="hero-subtitle" id="hero-subtitle">
+            Explore the most powerful tools for <span id="typed-text"></span><span class="typed-cursor">|</span>
+        </p>
+
+        <div class="hero-search">
+            <div class="search-wrapper">
+                <span class="search-icon-left">🔍</span>
+                <input type="text" id="search-input" placeholder="Search tools, categories, or features..."
+                    autocomplete="off" />
+                <span class="search-kbd">⌘ K</span>
+            </div>
+        </div>
+
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <div class="stat-number" data-target="60">0</div>
+                <div class="stat-label">AI Tools</div>
+            </div>
+            <div class="hero-stat">
+                <div class="stat-number" data-target="15">0</div>
+                <div class="stat-label">Categories</div>
+            </div>
+            <div class="hero-stat">
+                <div class="stat-number" data-target="100" data-suffix="%">0</div>
+                <div class="stat-label">Free to Browse</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Featured Section -->
+        <section class="featured-section" id="featured">
+            <div class="section-header">
+                <h2>⭐ <span class="heading-accent">Featured</span> Tools</h2>
+            </div>
+            <div class="featured-scroll" id="featured-scroll">
+                <!-- Rendered by JS -->
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="categories-section" id="categories">
+            <div class="section-header">
+                <h2>Browse by <span class="heading-accent">Category</span></h2>
+            </div>
+            <div class="categories-container" id="categories-container">
+                <!-- Rendered by JS -->
+            </div>
+        </section>
+
+        <!-- Tools Grid -->
+        <section id="tools">
+            <div class="section-header">
+                <h2>All <span class="heading-accent">Tools</span></h2>
+                <div style="display:flex; align-items:center; gap: 12px;">
+                    <div class="filter-toggles" id="filter-toggles">
+                        <button class="filter-toggle active" data-filter="all">All</button>
+                        <button class="filter-toggle" data-filter="trending">🔥 Trending</button>
+                        <button class="filter-toggle" data-filter="free">Free</button>
+                    </div>
+                    <span class="tool-count" id="tool-count">60 tools found</span>
+                </div>
+            </div>
+            <div class="tools-grid" id="tools-grid">
+                <!-- Rendered by JS -->
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter-section" id="newsletter">
+            <h2>Stay Updated with <span class="heading-accent">New AI Tools</span></h2>
+            <p>Get weekly curated picks of the best new AI tools delivered to your inbox.</p>
+            <form class="newsletter-form"
+                onsubmit="event.preventDefault(); this.querySelector('button').textContent='✓ Subscribed!'; this.querySelector('input').value='';">
+                <input type="email" placeholder="Enter your email address" required />
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="footer-logo-gradient">⚡ AI Toolscape</span>
+            </div>
+            <p class="footer-text">© 2026 AI Toolscape. Curating the best AI tools for you.</p>
+            <div class="footer-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-socials">
+                <a href="#" class="footer-social" aria-label="Twitter">𝕏</a>
+                <a href="#" class="footer-social" aria-label="GitHub">⌓</a>
+                <a href="#" class="footer-social" aria-label="Discord">◆</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal" id="modal-content"></div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
